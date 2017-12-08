@@ -1,0 +1,31 @@
+<Page ux:Class="PhysiciansPage" Color="White">
+  <DockPanel Dock="Top">
+    <WrapPanel Padding="0,0,0,23" Height="90" Dock="Top">
+      <_news.Header Label="Physicians" Clicked="{navigateToMenu}" Margin="15,25,0,10"/>
+      <_news.ic_search Clicked="{navigateToSearch}" />
+    </WrapPanel>
+    <StackPanel Dock="Top" Margin="15,10,0,30"  Height="63.5">
+      <Text TextTruncation="None" Color="#0156BE" Value="Select a physician" Margin="0,0,0,0" Height="29.5" />
+      <Text TextTruncation="None" FontSize="12" Height="29.5" X="0">For all media Inquiries
+Please call (212)316-7906
+      </Text>
+    </StackPanel>
+   <Panel>
+      <ScrollView>
+        <StackPanel>
+          <Each Items="{physicians}">
+            <_physicians.PhysicianListItem Clicked="{selectedPhysicianHandler}" Firstname="{firstname}" Lastname="{lastname}" Title="{title}" Specialty="{specialty}" Medicalschool="{medicalschool}" Photourl="{photourl}" >
+            <!-- <OnUserEvent EventName="selectedPhysician"  Handler="{selectedPhysicianHandler}" >
+            </OnUserEvent> -->
+          </_physicians.PhysicianListItem>
+          </Each>
+        </StackPanel>
+      </ScrollView>
+    </Panel>
+  </DockPanel>
+  <Router ux:Dependency="router" />
+  <JavaScript File="physicians.js" />
+  <Activated>
+    <Callback Handler="{init}" />
+  </Activated>
+</Page>

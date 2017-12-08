@@ -1,0 +1,15 @@
+<StackPanel Margin="0,0,0,30" ux:Class="_appointment.AppointmentTimeSection">
+  <Text TextTruncation="None" Color="#0156BE" Value="Appointment Time" Margin="0,2,0,4"  />
+  <WrapPanel >
+    <Image StretchMode="Fill" StretchDirection="DownOnly" X="0" Margin="0,7,15,0" Width="35" Height="35">
+        <MultiDensityImageSource>
+          <FileImageSource Density="1" File="../Assets/ic_appointmenttime.png" />
+          <FileImageSource Density="2" File="../Assets/ic_appointmenttime@2x.png" />
+        </MultiDensityImageSource>
+      </Image>
+      <Text TextTruncation="None" Value="{ReadProperty time}" Margin="0,0,0,4" Height="15.5">
+    <string ux:Property="time" />
+      <_appointment.AppointmentTime time="11:00 AM" />
+  </Text>
+  </WrapPanel>
+</StackPanel>

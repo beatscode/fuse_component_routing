@@ -1,0 +1,12 @@
+<StackPanel Margin="0,0,0,30" ux:Class="_appointment.AppointmentLocationSection">
+  <Text TextTruncation="None" Color="#0156BE" Value="Appointment Location" Margin="0,2,0,4"  />
+  <WrapPanel >
+    <Image StretchMode="Fill" StretchDirection="DownOnly" X="0" Margin="0,7,15,0" Width="35" Height="35">
+        <MultiDensityImageSource>
+          <FileImageSource Density="1" File="../Assets/ic_location_bg.png" />
+          <FileImageSource Density="2" File="../Assets/ic_location_bg@2x.png" />
+        </MultiDensityImageSource>
+      </Image>
+    <Text TextTruncation="None" TextWrapping="Wrap" Width="260" Value="William F. Ryan Community Health Center (Upper West Side)" Margin="0,0,0,4" Height="15.5" />
+  </WrapPanel>
+</StackPanel>

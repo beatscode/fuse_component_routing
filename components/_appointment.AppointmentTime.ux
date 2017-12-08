@@ -1,0 +1,6 @@
+<Panel X="0" Y="0" Width="84.5" Height="29" ux:Class="_appointment.AppointmentTime">
+  <Rectangle Layer="Background" Width="84" />
+  <Text TextTruncation="None" Value="{ReadProperty time}" Margin="0,2,0,4" Height="15.5">
+    <string ux:Property="time" />
+  </Text>
+</Panel>

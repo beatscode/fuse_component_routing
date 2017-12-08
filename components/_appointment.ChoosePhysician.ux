@@ -1,0 +1,13 @@
+<StackPanel Margin="0,0,0,30" ux:Class="_appointment.ChoosePhysician">
+  <string ux:Property="Label" />
+  <Text TextTruncation="None" Color="#0156BE" Value="Choose a Physician" Margin="0,2,0,4"  />
+  <WrapPanel >
+    <Image StretchMode="Fill" StretchDirection="DownOnly" X="0" Margin="0,7,15,0" Width="35" Height="35">
+        <MultiDensityImageSource>
+          <FileImageSource Density="1" File="../Assets/ic_physician.png" />
+          <FileImageSource Density="2" File="../Assets/ic_physician@2x.png" />
+        </MultiDensityImageSource>
+      </Image>
+      <Text TextTruncation="None" Value="{ReadProperty Label}" Margin="0,2,0,4" Height="15.5" />
+  </WrapPanel>
+</StackPanel>

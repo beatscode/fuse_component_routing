@@ -1,0 +1,6 @@
+<Image StretchMode="Fill" StretchDirection="DownOnly" Margin="4" ux:Class="_news.ic_menu">
+  <MultiDensityImageSource>
+    <FileImageSource Density="1" File="../Assets/ic_menu.png" />
+    <FileImageSource Density="2" File="../Assets/ic_menu@2x.png" />
+  </MultiDensityImageSource>
+</Image>

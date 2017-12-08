@@ -1,0 +1,5 @@
+<StackPanel Margin="0,0,0,0" Width="188" Height="72.5" ux:Class="_news.Header">
+  <_news.ic_menu Margin="0,2,0,15" Width="24" Height="18" X="0" Clicked="{navigateToMenu}" />
+  <Text TextTruncation="None" FontSize="30.50" Value="{ReadProperty Label}" Color="0.027674,0.246621,0.690455,1.000000" Margin="0,2,0,6" Height="39.5" />
+  <string ux:Property="Label"/>
+</StackPanel>

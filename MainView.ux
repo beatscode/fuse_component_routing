@@ -1,2 +1,12 @@
 <App>
+  <Router ux:Name="router" />
+  <ClientPanel>
+    <Navigator DefaultPath="Appointment">
+     
+      <AppointmentPage ux:Template="Appointment" router="router" />
+      <PhysiciansPage ux:Template="Physicians" router="router" />
+
+    </Navigator>
+  </ClientPanel>
 </App>
+

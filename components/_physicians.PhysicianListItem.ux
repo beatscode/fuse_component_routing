@@ -1,0 +1,34 @@
+<StackPanel Margin="0,0,0,30" X="0" Y="3.5"  Height="142" ux:Class="_physicians.PhysicianListItem">
+<string ux:Property="Firstname" />
+<string ux:Property="Lastname" />
+<string ux:Property="Title" />
+<string ux:Property="Medicalschool" />
+<string ux:Property="Specialty" />
+<string ux:Property="Photourl" />
+ <UserEvent ux:Name="selectedPhysician" />
+  <WrapPanel Padding="15,15,5,3" X="0" Y="0" >
+    <Image Width="100" Height="125" StretchMode="Uniform" StretchDirection="DownOnly">
+        <MultiDensityImageSource>
+            <HttpImageSource Density="1" Url="{ReadProperty Photourl}" />
+           <HttpImageSource Density="2" Url="{ReadProperty Photourl}@2x" />
+        </MultiDensityImageSource>
+    </Image>
+    <StackPanel ItemSpacing="5" Margin="15,5,0,30" Y="0.5" Width="182" Height="100.5">
+      <Text TextTruncation="None" FontSize="19.00" TextWrapping="Wrap" Value="Dr. {ReadProperty Firstname} {ReadProperty Lastname}, {ReadProperty Title}" Color="0.348246,0.374086,0.399926,1.000000" Margin="0,2,0,4"/>
+      <Text TextTruncation="None" FontSize="15.00" Value="{ReadProperty Specialty}" Color="0.685987,0.685966,0.685978,1.000000" Margin="0,2,0,4" Height="7" />
+      <Text TextTruncation="None" TextWrapping="Wrap" FontSize="13.00" Value="{ReadProperty Medicalschool}" Color="0.348246,0.374086,0.399926,1.000000" Margin="0,2,0,4" Height="23" />
+     
+     
+      <Image X="0" Margin="0,5,0,10" StretchMode="Fill" StretchDirection="DownOnly" >
+        <MultiDensityImageSource>
+            <FileImageSource Density="1" File="../Assets/Button.png" />
+           <FileImageSource Density="2" File="../Assets/Button@2x.png" />
+        </MultiDensityImageSource>
+          <Clicked>
+         <RaiseUserEvent EventName="selectedPhysician" />
+    </Clicked>
+      </Image>
+     
+    </StackPanel>
+  </WrapPanel>
+</StackPanel>

@@ -1,0 +1,3 @@
+<Panel X="0" Y="0" Width="25.5" Height="26" ux:Class="_news.ic_search">
+  <Rectangle Layer="Background" Width="25.5" />
+</Panel>

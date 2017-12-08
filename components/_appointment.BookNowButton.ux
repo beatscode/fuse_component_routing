@@ -1,0 +1,6 @@
+<Image StretchMode="Fill"  ux:Class="_appointment.BookNowButton" StretchDirection="DownOnly">
+  <MultiDensityImageSource>
+    <FileImageSource Density="1" File="../Assets/BookNowButton.png" />
+    <FileImageSource Density="2" File="../Assets/BookNowButton@2x.png" />
+  </MultiDensityImageSource>
+</Image>
