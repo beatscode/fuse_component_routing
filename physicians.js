@@ -13,9 +13,9 @@ var _physicians = observableObj.map(function(x) {
 
 
 function selectedPhysicianHandler(arg) {
-    var phys = arg.data.firstname
+    var phys = arg.data
     console.log(JSON.stringify(arg.data), typeof arg.data);
-    router.goto("Appointment");
+    router.goto("Appointment", phys);
 }
 
 function init() {

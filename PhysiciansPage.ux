@@ -14,9 +14,9 @@ Please call (212)316-7906
       <ScrollView>
         <StackPanel>
           <Each Items="{physicians}">
-            <_physicians.PhysicianListItem Clicked="{selectedPhysicianHandler}" Firstname="{firstname}" Lastname="{lastname}" Title="{title}" Specialty="{specialty}" Medicalschool="{medicalschool}" Photourl="{photourl}" >
-            <!-- <OnUserEvent EventName="selectedPhysician"  Handler="{selectedPhysicianHandler}" >
-            </OnUserEvent> -->
+            <_physicians.PhysicianListItem  Firstname="{firstname}" Lastname="{lastname}" Title="{title}" Specialty="{specialty}" Medicalschool="{medicalschool}" Photourl="{photourl}" >
+            <OnUserEvent EventName="selectedPhysician"  Handler="{selectedPhysicianHandler}" >
+            </OnUserEvent> 
           </_physicians.PhysicianListItem>
           </Each>
         </StackPanel>
